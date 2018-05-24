@@ -1,67 +1,79 @@
 <template>
-  <section class="container">
   <div>
-      <AppLogo/>
-      <Navigation/>
-      <h1 class="title">
-        trulvl-capstone
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+    <Logo/>
+    <div class="container">
+      <h1>Welcome!</h1>
+      <p><nuxt-link to='/product'>Product page</nuxt-link></p>
+      <p><nuxt-link to='/contact'>Contact page</nuxt-link></p>
     </div>
-  </section>
+  </div>
 </template>
-/*  */
+
 <script>
-import AppLogo from '@/components/AppLogo.vue';
+import Logo from '@/components/Logo.vue';
 import Navigation from '@/components/Navigation.vue';
 
 export default {
   components: {
-    AppLogo,
+    Logo,
     Navigation
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
+html, body {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  background: #222;
+  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+a, a:visited {
+  color: #3edada;
+  text-decoration: none;
 }
 
-.links {
-  padding-top: 15px;
+.container {
+  padding: 60px;
+  width: 100vw;
+  height: 100vh;
+  background: #444;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: all .25s ease-out;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+
+.page-enter-active {
+  animation: acrossIn .45s ease-out both;
+} 
+
+.page-leave-active {
+  animation: acrossOut .65s ease-in both;
+} 
+
+@keyframes acrossIn {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes acrossOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
 }
 </style>

@@ -13,10 +13,22 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ] 
   },
+  css: [
+    // 'bulma/css/bulma.css',
+    '~/css/main.css'
+  ],
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) =>
+      {
+        return ['script', 'style', 'font'].includes(type)
+      }
+    }
+  },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' }, // can set loading bar to 'none'
+  loading: { color: '#f24153' }, // can set loading bar to 'none'
   /*
   ** Build configuration
   */

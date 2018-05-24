@@ -1,24 +1,5 @@
 <template>
-  <ul class='nav-container'>
-    <li>
-      <nuxt-link to='/'>Home</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to='/Shop'>Shop</nuxt-link>
-    </li>
-        <li>
-      <nuxt-link to='/Shop'>Womens</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to='/Shop'>Mens</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to='/Shop'>Mens</nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to='/Shop'>About Us</nuxt-link>
-    </li>
-  </ul>
+  <div></div>
 </template>
 
 <script>
