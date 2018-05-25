@@ -1,53 +1,38 @@
 <template>
-  <div>
-    <ul class='nav-container'>
-      <li>
-        <nuxt-link to='/'>Home</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to='/shop'>Shop</nuxt-link>
-      </li>
-        <li>
-        <nuxt-link to='/womens'>Womens</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to='/mens'>Mens</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to='/about'>About Us</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to='/contact'>Contact</nuxt-link>
-      </li>
-    </ul>
-    <div>
-      <nuxt-link to='/'><img src='/trulvl-white-logo.png'></nuxt-link>
-    </div>
-  <nuxt/>
+  <div class='main'>
+    <app-nav></app-nav>
+    <logo/>
+    <Navigation/>
+    <nuxt/>
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation.vue';
 import Logo from '@/components/Logo.vue';
+import nav from '@/components/nav';
 
 export default {
-  components: 
+  components: {
     Navigation,
-    Logo
+    Logo,
+    'app-nav': nav
+  }
 }
 </script>
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: #222;
+  word-spacing: 4px;
+  width: 100vw;
+  height: 100vh;
 }
 
 *, *:before, *:after {
@@ -84,13 +69,27 @@ html {
   background-color: #35495e;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 13vw;
-  min-width: 150px;
-  justify-content: center;
-  padding-bottom: 2rem;
+.main {
+  height: 100%;
+  position: relative;
+  color: #fff;
+}
+
+footer {
+  background: #7F43C3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.social {
+  display: flex;
+}
+
+.twitter {
+  margin-right: 1rem;
 }
 </style>

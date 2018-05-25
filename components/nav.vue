@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo">
-      <app-h1 is-brand="true">TRULVL SHOP</app-h1>
+      <app-h1 is-brand="true"></app-h1>
     </div>
     <div class="menu">
       <ul>
@@ -9,7 +9,7 @@
            <nuxt-link to="/">Login</nuxt-link>
         </li>
         <li>
-           <nuxt-link to="/about">Cart</nuxt-link>
+           <nuxt-link to="/">Cart</nuxt-link>
         </li>
       </ul>
     </div>
@@ -30,10 +30,9 @@ nav {
   display: flex;
 }
 .logo {
-  background: #7F43C3;
   padding: 15px;
   width: 25%;
-  text-align: center
+  text-align: center;    
 }
 .menu {
   text-align: right;
@@ -51,10 +50,8 @@ nav {
   display: block;
   padding: 5px 7px;
   text-decoration: none;
-  background: #1CB593;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 10px;
   height: 20px;
   line-height: 20px;  
 }

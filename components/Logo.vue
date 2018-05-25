@@ -18,6 +18,6 @@ img {
   max-width: 13vw;
   min-width: 150px;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 </style>

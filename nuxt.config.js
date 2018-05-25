@@ -10,13 +10,23 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Raleway'
+      },
+      { rel: 'stylesheet', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'https://cdn.css-tricks.com/favicon.ico'
+      }
     ] 
   },
-  css: [
-    // 'bulma/css/bulma.css',
-    '~/css/main.css'
-  ],
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) =>
@@ -25,6 +35,18 @@ module.exports = {
       }
     }
   },
+  css: [
+    // Load a Node.js module directly (here it's a Sass file)
+    'bulma',
+    // CSS file in the project
+    // SCSS file in the project
+    '@/assets/main.scss',
+    'normalize.css', '@/assets/base.css'
+  ],
+  modules: [
+  // provide path to the file with resources
+  ['nuxt-sass-resources-loader', '@/assets/main.scss']
+  ],
   /*
   ** Customize the progress bar color
   */

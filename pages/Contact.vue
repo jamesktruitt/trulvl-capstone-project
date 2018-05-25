@@ -1,8 +1,10 @@
 <template>
-  <div class='container'>
-    <h1>This is the contact page</h1>
-    <p><nuxt-link to='/'>Home page</nuxt-link></p>
-  </div>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Hello Bulma</h1>
+      <p class="subtitle">My first website with<strong>Bulma</strong>!</p>
+    </div>
+  </section>
 </template>
 
 <script>

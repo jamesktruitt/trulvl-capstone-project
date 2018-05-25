@@ -22,4 +22,8 @@ export default {
   padding: 3rem;
   margin: 1.5rem 15rem;
 }
+
+p {
+  
+}
 </style>
