@@ -10,8 +10,6 @@
     <img src="/womens-1.png" alt="">
     <img src="/womens-1.png" alt="">
     <img src="/womens-1.png" alt="">
-    <img src="/womens-1.png" alt="">
-    <img src="/womens-1.png" alt="">
   </section>
 </template>
 
@@ -26,7 +24,7 @@ export default {
   margin: 50px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .gallery img {

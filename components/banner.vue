@@ -16,6 +16,7 @@ img {
   max-width: 60vw;
   min-width: 60vw;
   align-content: center;
+  padding: 2rem;
 }
 
 </style>

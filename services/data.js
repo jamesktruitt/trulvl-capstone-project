@@ -1,65 +1,58 @@
 export default [{
     id: 1,
-    price: 4,
-    title: 'Drinks',
+    price: 65,
+    title: 'Crew Sweater',
     imgUrl: '/mens-1.png'
 
   }, {
     
     id: 2,
-    price: 3,
-    title: 'Home',
+    price: 185,
+    title: 'Varsity',
     imgUrl: '/mens-2.png'
 
   }, {
     
     id: 3,
-    price: 1,
-    title: 'Stationary',
+    price: 55,
+    title: "Runner'\s\ Set",
     imgUrl: '/mens-4.png'
 
   }, {
     
     id: 4,
-    price: 5,
-    title: 'Coffee',
-    imgUrl: '/mens-5.png'
-
-  }, {
-    
-    id: 5,
-    price: 7,
-    title: 'Notebooks',
+    price: 30,
+    title: 'Joggers',
     imgUrl: '/mens-6.png'
 
 
   }, {
     
-    id: 6,
-    price: 6,
-    title: 'Business cards',
+    id: 5,
+    price: 80,
+    title: "Runner'\s\ Set",
     imgUrl: '/mens-7.png'
 
 
   }, {
     
-    id: 4,
-    price: 5,
-    title: 'Coffee',
+    id: 6,
+    price: 25,
+    title: 'Sports Top',
     imgUrl: '/womens-1.png'
 
   }, {
     
-    id: 5,
-    price: 7,
-    title: 'Notebooks',
+    id: 7,
+    price: 40,
+    title: 'Profile Hoodie',
     imgUrl: '/womens-2.png'
 
   }, {
     
-    id: 6,
-    price: 6,
-    title: 'Business cards',
+    id: 8,
+    price: 40,
+    title: 'Joggers',
     imgUrl: 'womens-3.png'
   }
 ]

@@ -10,8 +10,6 @@
     <img src="/mens-1.png" alt="">
     <img src="/mens-1.png" alt="">
     <img src="/mens-1.png" alt="">
-    <img src="/mens-1.png" alt="">
-    <img src="/mens-1.png" alt="">
   </section>
 </template>
 

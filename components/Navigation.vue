@@ -4,8 +4,8 @@
     <p><nuxt-link to='/mens'>Mens</nuxt-link></p>
     <p><nuxt-link to='/womens'>Womens</nuxt-link></p>
     <p><nuxt-link to='/about'>About</nuxt-link></p>
-    <p><nuxt-link to='/shop'>Shop</nuxt-link></p>
     <p><nuxt-link to='/contact'>Contact</nuxt-link></p>
+    <p><nuxt-link to='/shop'>Blog</nuxt-link></p>
   </section>
 </template>
 
